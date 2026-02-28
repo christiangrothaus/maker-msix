@@ -1,0 +1,28 @@
+{
+  "name": "electron-forge-maker-msix",
+  "version": "0.1.0",
+  "description": "An electron forge MSIX maker",
+  "repository": "https://github.com/christiangrothaus/maker-msix",
+  "author": "Christian Grothaus",
+  "license": "MIT",
+  "main": "dist/MakerMSIX.js",
+  "typings": "dist/MakerMSIX.d.ts",
+  "engines": {
+    "node": ">= 16.4.0"
+  },
+  "dependencies": {
+    "@electron-forge/core-utils": "^7.11.1",
+    "@electron-forge/maker-base": "^7.11.1",
+    "@electron-forge/shared-types": "^7.11.1",
+    "cross-spawn": "^7.0.6",
+    "electron-windows-msix": "^2.0.4",
+    "fs-extra": "^11.3.3",
+    "parse-author": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "prettier": "3.8.1"
+  }
+}
