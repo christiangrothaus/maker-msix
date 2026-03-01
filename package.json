@@ -1,6 +1,6 @@
 {
   "name": "electron-forge-maker-msix",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "An electron forge MSIX maker",
   "repository": "https://github.com/christiangrothaus/maker-msix",
   "author": "Christian Grothaus",
@@ -23,6 +23,10 @@
     "access": "public"
   },
   "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
     "prettier": "3.8.1"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
