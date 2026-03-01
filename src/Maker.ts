@@ -10,11 +10,15 @@ import os from 'os'
 import path from 'path'
 import { toMsixArch } from './utils/packager'
 
-type MakerConfig = PackagingOptions
+type MakerConfig = Omit<PackagingOptions, 'outputDir' | 'appDir'>
 
 export default class Maker extends MakerBase<MakerConfig> {
   defaultPlatforms: ForgePlatform[] = ['win32']
-  name = 'msix'
+  name = 'electron-forge-maker-msix'
+
+  isSupportedOnCurrentPlatform() {
+    return process.platform === 'win32'
+  }
 
   async make({
     dir,
